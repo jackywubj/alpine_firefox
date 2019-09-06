@@ -5,5 +5,5 @@ From alpine
 #ENV LANGUAGE zh_TW.UTF-8
 #ENV LC_ALL zh_TW.UTF-8
 # 安裝firefox
-RUN apk add firefox
+RUN sudo apk update && sudo apk add firefox-esr
 CMD /usr/bin/firefox
